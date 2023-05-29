@@ -1,5 +1,5 @@
-import { RectangleValue } from "react-drawing-library/dist/types/shapes/rectangle/Rectangle.types"
-import { PointValue } from "react-drawing-library/dist/types/shapes/Point/Point.types"
+import { RectangleValue } from "@paohuoche/react-drawing-library/dist/types/shapes/rectangle/Rectangle.types"
+import { PointValue } from "@paohuoche/react-drawing-library/dist/types/shapes/Point/Point.types"
 
 /**
  * number of frame

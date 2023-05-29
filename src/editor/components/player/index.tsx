@@ -144,6 +144,7 @@ const PlayerComponent = observer((props: VideoType) => {
     <div className="h-full flex flex-col">
       <div ref={videoContainerRef} className="grow bg-gray-950">
         <video
+          crossOrigin="anonymous"
           muted
           // className="h-full w-full"
           ref={videoRef}

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Player from "./components/player"
-import { useDrawing } from "react-drawing-library"
+import { useDrawing } from "@paohuoche/react-drawing-library"
 import Header from "./components/header"
 import Store from "./store"
 import dayjs from "dayjs"

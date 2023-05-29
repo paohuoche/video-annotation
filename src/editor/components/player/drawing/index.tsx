@@ -1,5 +1,5 @@
 import React, { memo, useContext } from "react"
-import Drawing, { DrawingProps, useDrawing } from "react-drawing-library"
+import Drawing, { DrawingProps } from "@paohuoche/react-drawing-library"
 import { message } from "antd"
 import { observer } from "mobx-react-lite"
 import { EditorContext } from "../../.."

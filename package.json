@@ -1,5 +1,6 @@
 {
   "name": "video-annotation",
+  "homepage": "https://paohuoche.github.io/video-annotation",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,7 @@
     "@types/react-dom": "^18.0.11",
     "antd": "^5.5.1",
     "dayjs": "^1.11.7",
+    "gh-pages": "^5.0.0",
     "konva": "^9.0.1",
     "mobx": "^6.9.0",
     "mobx-react-lite": "^3.4.3",
@@ -32,6 +34,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

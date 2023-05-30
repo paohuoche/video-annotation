@@ -8,4 +8,4 @@ Hope it can give you guys a little inspiration.
 
 # What it looks like
 
-`![alt text](https://github.com/paohuoche/video-annotation/blob/376222385a64dff45c206bc58e1f5f529eded358/screenshot.png)`
+![alt text](https://github.com/paohuoche/video-annotation/blob/376222385a64dff45c206bc58e1f5f529eded358/screenshot.png)

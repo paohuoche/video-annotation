@@ -5,7 +5,7 @@ import Editor, { useEditor } from "./editor"
 // import { Stage } from "react-konva"
 
 const videoFile =
-  "https://dl.dropboxusercontent.com/1/view/5y7znw1bpt2h69q/190516_06_AZ-LAGOA-30.mp4"
+  "https://joy.videvo.net/videvo_files/video/premium/partners0236/large_watermarked/BB_6bdddd91-cba1-45ef-b9ca-793a7692e6e5_preview.mp4"
 
 function App() {
   const fps = 30

@@ -1,37 +1,29 @@
-import { useState } from "react"
-import Drawing, { DrawingProps, useDrawing } from "react-drawing-library"
-
-// import DrawingProps from 'react-drawing-library/dist/esm/'
-// import { Stage } from "react-konva"
-
-const shapeDraw: DrawingProps["draw"] = {
-  type: "Rectangle",
-  color: "#52acff",
-  text: "aa",
-}
+import { useEffect } from "react"
+import Editor, { useEditor } from "./editor"
+import videoFile from "./sintel-short.mp4"
 
 function App() {
-  const imageUrl =
-    "https://tse1-mm.cn.bing.net/th/id/OIP-C.rQ9MEBHEGcjQ8Yc2YB23YQHaEj?w=315&h=193&c=7&r=0&o=5&dpr=2&pid=1.7"
+  const fps = 30
+  const editor = useEditor({ fps })
 
-  const shapes = useDrawing()
+  useEffect(() => {
+    editor.store.labels.setLabel({
+      label1: {
+        color: "#f59e0b",
+        classification: "label1",
+      },
+      label2: {
+        color: "#16a34a",
+        classification: "label2",
+      },
+      label3: {
+        color: "#0ea5e9",
+        classification: "label3",
+      },
+    })
+  }, [])
 
-  const [draw, setDraw] = useState<DrawingProps["draw"] | undefined>(shapeDraw)
-
-  return (
-    <div>
-      <button onClick={() => setDraw(undefined)}>clear draw</button>
-      <button onClick={() => setDraw(shapeDraw)}>rectangle</button>
-      <button onClick={() => console.log(shapes.shapes)}>console shapes</button>
-      <Drawing
-        draw={draw}
-        shapes={shapes}
-        imageUrl={imageUrl}
-        width={window.innerWidth}
-        height={window.innerHeight}
-      />
-    </div>
-  )
+  return <Editor editor={editor} url={videoFile} />
 }
 
 export default App

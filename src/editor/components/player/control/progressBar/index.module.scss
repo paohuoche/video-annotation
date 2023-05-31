@@ -1,0 +1,22 @@
+.progress-indicator,
+.thumbnailWrapper {
+  display: none;
+}
+
+.thumbnailWrapper {
+  position: absolute;
+  // top: -100px;
+  background: white;
+  // height: 100px;
+  // width: 160px;
+}
+
+.hoverPointer {
+  &:hover {
+    cursor: pointer;
+    .progress-indicator,
+    .thumbnailWrapper {
+      display: block;
+    }
+  }
+}

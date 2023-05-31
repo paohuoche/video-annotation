@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# About this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project is only a prototype of video annotation, which is used to demonstrate how the user experience of annotating on video. And I have used it on our own business project.
 
-## Available Scripts
+I create it with the help of my other [library](https://github.com/paohuoche/react-drawing-library). Here, I remove some unnecessary little features and interact with the backend.
 
-In the project directory, you can run:
+Hope it can give you guys a little inspiration.
 
-### `npm start`
+# What it looks like
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![alt text](https://github.com/paohuoche/video-annotation/blob/376222385a64dff45c206bc58e1f5f529eded358/screenshot.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# How to use it
 
-### `npm test`
+## Drawing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before drawing, You have to finish three selections: **Shape, Classification, and Group**.
 
-### `npm run build`
+**Shape**: In the middle of the header of the page layout. when any type of shape is selected, it will float up and turn red. To clear the shape selection, simply click on the selected shape again.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Classification**: At the top of the sidebar, there are three classifications in the demo, you can check out the effects of selected.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Group**: A single group has a specified time range: start frame number and end frame number. All the shapes drawn within the specified time range will be treated as a group of shapes. To create a new group, just click the shear icon, then you can see a green rectangle on the progress bar. Simply drag its two sides, changing the start and end frame.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The order in which you complete these three selections does not matter. After finishing them, you will be able to draw shapes.
 
-### `npm run eject`
+## Modification
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You have to clear the shape selection first. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you want to change the size of the rectangle, click on the target one, then you can see four anchors, and drag it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you want to change position, simply drag on the shape.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If you want to delete, right-click on any shape that you want to delete.
 
-## Learn More
+## Player
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The operation is pretty much the same as others that we are used to doing. Besides those, I add a preview feature, it will be active by clicking on that film icon. Also s

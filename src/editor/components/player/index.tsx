@@ -58,16 +58,12 @@ const PlayerComponent = observer((props: VideoType) => {
   /**
    * onSeeking
    */
-  const onSeeking = () => {
-    console.log("seeking")
-  }
+  const onSeeking = () => {}
 
   /**
    * onSeedend
    */
-  const onSeeked = () => {
-    console.log("onSeeked")
-  }
+  const onSeeked = () => {}
 
   /**
    * onProgress

@@ -58,7 +58,7 @@ export class SortedArray {
    * @param frame: current frame
    */
   nextElement(frame: number) {
-    if (this.length() === 0) return
+    // if (this.length() === 0) return
 
     const index = this.largerIndex(frame)
     if (index > this.length() - 1) {
@@ -73,7 +73,7 @@ export class SortedArray {
    * @param frame: current frame
    */
   previousElement(frame: number) {
-    if (this.length() === 0) return
+    // if (this.length() === 0) return
 
     const index = this.smallerIndex(frame)
     if (index < 0) {

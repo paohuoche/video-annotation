@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite"
 import React, { useContext } from "react"
 import { FaFilm } from "react-icons/fa"
 import { EditorContext } from "../../../.."
+import { Tooltip } from "antd"
 
 const preview = observer(() => {
   const {
@@ -15,7 +16,9 @@ const preview = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <FaFilm className="text-lg cursor-pointer" />
+      <Tooltip title="open preview">
+        <FaFilm className="text-lg cursor-pointer" />
+      </Tooltip>
     </div>
   )
 })

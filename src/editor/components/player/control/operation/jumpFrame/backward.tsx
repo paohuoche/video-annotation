@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { observer } from "mobx-react-lite"
 import { FaBackward } from "react-icons/fa"
 import { EditorContext } from "../../../../.."
+import { Tooltip } from "antd"
 
 const Backward = observer(() => {
   const {
@@ -14,7 +15,9 @@ const Backward = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <FaBackward className="text-lg cursor-pointer" />
+      <Tooltip title="backward 10 frames">
+        <FaBackward className="text-lg cursor-pointer" />
+      </Tooltip>
     </div>
   )
 })

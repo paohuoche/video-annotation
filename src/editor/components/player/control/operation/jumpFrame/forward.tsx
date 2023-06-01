@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite"
 import { useContext } from "react"
 import { FaForward } from "react-icons/fa"
 import { EditorContext } from "../../../../.."
+import { Tooltip } from "antd"
 
 const Forward = observer(() => {
   const {
@@ -13,7 +14,9 @@ const Forward = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <FaForward className="text-lg cursor-pointer" />
+      <Tooltip title="forward 10 frames">
+        <FaForward className="text-lg cursor-pointer" />
+      </Tooltip>
     </div>
   )
 })

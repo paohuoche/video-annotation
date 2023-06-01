@@ -48,6 +48,7 @@ class Shapes {
 
   delete(params: ShapesType.Params.Delete) {
     const { frame, groupId, shapeId } = params
+
     delete this.shapes[groupId][frame]?.[shapeId]
     if (
       this.shapes[groupId][frame] &&

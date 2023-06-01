@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite"
 import React, { useContext } from "react"
 import { FaCut } from "react-icons/fa"
 import { EditorContext } from "../../../.."
+import { Tooltip } from "antd"
 
 const createRange = observer(() => {
   const {
@@ -22,7 +23,9 @@ const createRange = observer(() => {
 
   return (
     <div onClick={open}>
-      <FaCut className="text-lg cursor-pointer" />
+      <Tooltip title="create new group">
+        <FaCut className="text-lg cursor-pointer" />
+      </Tooltip>
     </div>
   )
 })

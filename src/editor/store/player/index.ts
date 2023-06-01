@@ -1,4 +1,4 @@
-import { computed, makeAutoObservable } from "mobx"
+import { makeAutoObservable } from "mobx"
 import Store from ".."
 
 // 前后各预览20帧

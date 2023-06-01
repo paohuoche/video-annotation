@@ -68,6 +68,15 @@ const DrawingArea = observer(
       )
     }
 
+    const onDelete: DrawingProps["onDelete"] = (id) => {
+      // drawing.del(value.id)
+      shapes.delete({
+        frame: player.currentFrame,
+        groupId: current.groupId,
+        shapeId: id,
+      })
+    }
+
     if (current.shapeType) {
       draw = {
         type: current.shapeType,
@@ -79,8 +88,9 @@ const DrawingArea = observer(
       <div style={{ width, height }}>
         <Drawing
           beforeCreate={beforeCreate}
-          draw={draw}
           onCreate={onCreate}
+          onDelete={onDelete}
+          draw={draw}
           bounding={{
             width,
             height,
@@ -89,7 +99,6 @@ const DrawingArea = observer(
             scale: 1,
           }}
           shapes={drawing}
-          // imageUrl={imageUrl}
           width={width}
           height={height}
         />

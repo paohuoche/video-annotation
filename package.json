@@ -35,7 +35,6 @@
   },
   "scripts": {
     "deploy": "rm -rf build && npm run build && gh-pages -d build",
-    "gh": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

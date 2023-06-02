@@ -25,7 +25,7 @@ const next = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <Tooltip title="next labeled frame">
+      <Tooltip title="next labeled frame" placement="bottom">
         <FaArrowRight className="text-lg cursor-pointer" />
       </Tooltip>
     </div>

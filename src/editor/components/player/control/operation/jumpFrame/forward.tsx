@@ -14,7 +14,7 @@ const Forward = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <Tooltip title="forward 10 frames">
+      <Tooltip title="forward 10 frames" placement="bottom">
         <FaForward className="text-lg cursor-pointer" />
       </Tooltip>
     </div>

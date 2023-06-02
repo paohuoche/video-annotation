@@ -16,7 +16,7 @@ const preview = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <Tooltip title="open preview">
+      <Tooltip title="open preview" placement="bottom">
         <FaFilm className="text-lg cursor-pointer" />
       </Tooltip>
     </div>

@@ -52,7 +52,7 @@ const Header = observer(() => {
                 (current.shapeType === "Point" ? "text-red-500 shadow-md " : "")
               }
               onClick={() => {
-                if (current.shapeType === "Rectangle") {
+                if (current.shapeType === "Point") {
                   current.clearShapeType()
                 } else {
                   current.setShapeType("Point")

@@ -23,7 +23,7 @@ const createRange = observer(() => {
 
   return (
     <div onClick={open}>
-      <Tooltip title="create new group">
+      <Tooltip title="create new group" placement="bottom">
         <FaCut className="text-lg cursor-pointer" />
       </Tooltip>
     </div>

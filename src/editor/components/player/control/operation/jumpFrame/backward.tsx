@@ -15,7 +15,7 @@ const Backward = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <Tooltip title="backward 10 frames">
+      <Tooltip title="backward 10 frames" placement="bottom">
         <FaBackward className="text-lg cursor-pointer" />
       </Tooltip>
     </div>

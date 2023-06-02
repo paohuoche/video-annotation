@@ -17,11 +17,11 @@ const play = observer(() => {
   return (
     <div>
       {player.paused ? (
-        <Tooltip title="play">
+        <Tooltip title="play" placement="bottom">
           <FaPlay className="text-lg cursor-pointer" onClick={play} />
         </Tooltip>
       ) : (
-        <Tooltip title="pause">
+        <Tooltip title="pause" placement="bottom">
           <FaPause
             className="text-lg cursor-pointer"
             onClick={() => player.pause()}

@@ -23,7 +23,7 @@ const previous = observer(() => {
 
   return (
     <div onClick={onClick}>
-      <Tooltip title="previous labeled frame">
+      <Tooltip title="previous labeled frame" placement="bottom">
         <FaArrowLeft className="text-lg cursor-pointer" />
       </Tooltip>
     </div>
